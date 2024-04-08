@@ -34,10 +34,7 @@ Labo2 ise backend kodlarını içerir ve `src/main/java/proje/labo` dizininde ye
 
 ## Tablolar
 
-### `Raporlar` Tablosu
-
-Bu tablo, hastaların raporlarını saklamak için kullanılır.
-
+### Raporlar Tablosu
 ```sql
 CREATE TABLE Raporlar (
   dosya_numarasi SERIAL PRIMARY KEY,
@@ -50,7 +47,7 @@ CREATE TABLE Raporlar (
   fiziksel_rapor_fotografi VARCHAR(100),
   laborant_id INT REFERENCES Laborantlar(laborant_id)
 );
-### Laborantlar` Tablosu
+### Laborantlar Tablosu
 
 CREATE TABLE Laborantlar (
   laborant_id SERIAL PRIMARY KEY,
