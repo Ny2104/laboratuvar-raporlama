@@ -4,7 +4,7 @@
 
   
 
-Bu belgede, Spring Boot , PostgreSQL ve Visual Studio Code kullanılarak geliştirilmiş bu projenin nasıl kurulacağı, çalıştırılacağı ve veritabanı üzerindeki verilere nasıl erişileceği adımları anlatılacaktır. 
+Bu belgede, Spring Boot , PostgreSQL ve Visual Studio Code kullanılarak geliştirilmiş  projenin nasıl kurulacağı, çalıştırılacağı ve veritabanı üzerindeki verilere nasıl erişileceği adımları anlatılacaktır. 
 
 Proje1, frontend kodlarını içerir ve `src/components` dizininde bulunur. 
 
