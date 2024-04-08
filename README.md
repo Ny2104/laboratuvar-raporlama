@@ -6,6 +6,11 @@
 
 Bu belgede, Spring Boot , PostgreSQL ve Visual Studio Code kullanılarak geliştirilmiş bir uygulamanın nasıl kurulacağı, çalıştırılacağı ve veritabanı üzerindeki verilere nasıl erişileceği adımları anlatılacaktır. 
 
+Proje1, frontend kodlarını içerir ve `src/components` dizininde bulunur. 
+
+Labo2 ise backend kodlarını içerir ve `src/main/java/proje/labo` dizininde yer alır.
+
+
   
 
 ## Kurulum Adımları 
@@ -150,7 +155,7 @@ Bu belgede, Spring Boot , PostgreSQL ve Visual Studio Code kullanılarak gelişt
 
    java --jar labo.jar 
 
-   ``` 
+
 
    Burada, `labo.jar`, derlenmiş Spring Boot uygulamasının JAR dosyasının adıdır. 
 
@@ -190,7 +195,7 @@ Bu belgede, Spring Boot , PostgreSQL ve Visual Studio Code kullanılarak gelişt
 
    npm run dev 
 
-   ``` 
+   
 
    Bu komut, genellikle React uygulamalarında geliştirme sunucusunu başlatır. Ancak, proje yapılandırmasına bağlı olarak değişebilir. 
 
@@ -202,13 +207,13 @@ Bu belgede, Spring Boot , PostgreSQL ve Visual Studio Code kullanılarak gelişt
 
 1. **psycopg2 Kütüphanesinin Kurulması**: 
 
-   PostgreSQL veritabanına erişmek için Python'da psycopg2 kütüphanesini kurmanız gerekmektedir. Kurulum için: 
+   PostgreSQL veritabanına erişmek için  psycopg2 kütüphanesini kurmanız gerekmektedir. Kurulum için: 
 
-   ```bash 
+ 
 
    pip install psycopg2 
 
-   ``` 
+
 
   
 
@@ -216,11 +221,11 @@ Bu belgede, Spring Boot , PostgreSQL ve Visual Studio Code kullanılarak gelişt
 
    PostgreSQL veritabanına bağlanmak için aşağıdaki komutu kullanın: 
 
-   ```bash 
+
 
    pgcli -h localhost -U postgres -d raporyonetimi 
 
-   ``` 
+
 
    Burada, `localhost` PostgreSQL sunucu adresini, `postgres` PostgreSQL veritabanı kullanıcı adını ve `raporyonetimi` PostgreSQL veritabanı adını temsil eder. 
 
@@ -230,13 +235,13 @@ Bu belgede, Spring Boot , PostgreSQL ve Visual Studio Code kullanılarak gelişt
 
    Bağlandıktan sonra, SQL sorgularını kullanarak PostgreSQL veritabanındaki verilere erişebilirsiniz. Örneğin: 
 
-   ```sql 
+
 
    SELECT * FROM raporlar; 
 
    SELECT * FROM laborantlar; 
 
-   ``` 
+
 
    Bu sorgular, `raporlar` ve `laborantlar` tablolarındaki tüm verileri getirecektir. 
 
