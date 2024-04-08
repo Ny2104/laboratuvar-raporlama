@@ -51,7 +51,33 @@ CREATE TABLE Raporlar (
   laborant_id INT REFERENCES Laborantlar(laborant_id)
 );
 
-### `Laborantlar` Tablosu
+### Laborantlar` Tablosu
+
+CREATE TABLE Laborantlar (
+  laborant_id SERIAL PRIMARY KEY,
+  ad VARCHAR(50),
+  soyad VARCHAR(50),
+  hastane_kimlik_numarasi INT
+);
+
+### Raporlar Tablosuna Veri Ekleme
+INSERT INTO Raporlar ( hasta_ad, hasta_soyad, hasta_tc, tani_basligi, tani_detaylari, rapor_tarihi, fiziksel_rapor_fotografi, laborant_id
+) VALUES
+  ('Ahmet', 'Yılmaz', '27645678901', 'Migren', 'Baş ağrısı ve halsizlik şikayetleri mevcut.', '2024-01-25', 'dosya123.jpg', 1),
+  ('Ayşe', 'Kaya', '27656789012', 'Grip', 'Ateş ve öksürük belirtileri bulundu.', '2024-03-25', 'dosya124.jpg', 2),
+  ('Mehmet', 'Demir', '27667543570', 'Mide Ağrısı', 'Mide yanması ve hazımsızlık problemi var.', '2024-03-28', 'dosya125.jpg', 3),
+  ('Fatma', 'Şahin', '27638901234', 'Şeker', 'Yüksek kan şekeri tespit edildi.', '2024-03-24', 'dosya126.jpg', 4),
+  ('Selim', 'Çelik', '27689018345', 'Zehirlenme', 'Karın ağrısı ve kusma şikayetleri var.', '2024-03-21', 'dosya127.jpg', 5);
+
+### Laborantlar Tablosuna Veri Ekleme
+
+INSERT INTO Laborantlar (ad, soyad, hastane_kimlik_numarasi) VALUES
+  ('Ali', 'Yıl', 1000001),
+  ('Aişe', 'Kay', 1000002),
+  ('Memo', 'Dem', 1000003),
+  ('Fatıma', 'Şah', 1000004),
+  ('Alin', 'Çelim', 1000005);
+
 
 
 ### Spring Boot Projesinin Oluşturulması: 
