@@ -8,7 +8,7 @@ Bu belgede, Spring Boot , PostgreSQL ve Visual Studio Code kullanılarak gelişt
 
 Proje1, frontend kodlarını içerir ve `src/components` dizininde bulunur. 
 
-Labo2 ise backend kodlarını içerir ve `src/main/java/proje/labo` dizininde yer alır.
+Labo2 ise backend kodlarını içerir ve `src/main/java/proje/labo` dizininde yer alır.Jar dosyası ise  target dosyasında yer alır
 
 
   
