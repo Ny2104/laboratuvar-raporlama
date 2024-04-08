@@ -32,11 +32,12 @@ Labo2 ise backend kodlarını içerir ve `src/main/java/proje/labo` dizininde ye
    - Senaryoya göre, "raporlar" ve "laborantlar" tablolarını oluşturuldu ve veriler girildi. 
    -Proje kapsamında kullanılan veritabanı yapısını ve başlangıç verilerini aşağıda bulabilirsiniz.
 
-### Tablolar
 
- c### Raporlar Tablosu
+
 
 ```sql
+
+ ### Raporlar Tablosu
 CREATE TABLE Raporlar (
   dosya_numarasi SERIAL PRIMARY KEY,
   hasta_ad VARCHAR(50),
