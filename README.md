@@ -114,7 +114,7 @@ INSERT INTO Laborantlar (ad, soyad, hastane_kimlik_numarasi) VALUES
 
    
 
-3. **DataAccess Katmanı Paketleri Oluşturma**:  
+3. **Dao Katmanı Paketleri Oluşturma**:  
 
    - Veritabanı işlemleri için abstract ve concrete paketlerini oluşturuldu. 
 
@@ -132,11 +132,17 @@ INSERT INTO Laborantlar (ad, soyad, hastane_kimlik_numarasi) VALUES
 
 1. **React Kurulumu**:  
 
-   - Visual Studio Code veya tercih ettiğiniz bir metin editörü kullanarak React kütüphanesini kuruldu. 
+   - Visual Studio Code kullanarak React kütüphanesini kuruldu.
 
-   - "components" dosyası içerisinde raporlar için gerekli bileşenleri oluşturuldu ve CSS özelliklerini eklendi. 
+     npm create vite@latest
 
-   - Backend'den veri almak için gerekli bağlantıları Axios ile kuruldu. 
+   - "components" dosyası içerisinde gerekli bileşenleri oluşturuldu ve CSS özelliklerini eklendi.
+      Rapor.jsx
+      Style.css
+
+   - Backend'den veri almak için gerekli bağlantıları Axios ile kuruldu.
+
+    npm install axios
 
   
 
@@ -146,7 +152,7 @@ INSERT INTO Laborantlar (ad, soyad, hastane_kimlik_numarasi) VALUES
 
 - **PostgreSQL Veritabanı**:  
 
-  - Güçlü ve güvenilir bir açık kaynaklı veritabanı yönetim sistemidir. 
+  - Güçlü ve güvenilir bir  veritabanı yönetim sistemidir. 
 
   
 
@@ -168,17 +174,9 @@ INSERT INTO Laborantlar (ad, soyad, hastane_kimlik_numarasi) VALUES
 
 ## İDE Kullanmadan Çalıştırma: Terminal Komutları 
 
-  
+  ### Spring Boot İçin 
 
-### Spring Boot İçin 
-
-  
-
- 
-
- 
-
-1. **Proje Dizinine Gitme**: 
+  1. **Proje Dizinine Gitme**: 
 
    Terminal veya komut istemcisini kullanarak ilgili proje dizinine gidin.  
 
@@ -220,74 +218,48 @@ INSERT INTO Laborantlar (ad, soyad, hastane_kimlik_numarasi) VALUES
 
     
 
- 
-
- 
-
-2. **Axios kütüphanesini ekleme**: 
+ 2. **Axios kütüphanesini ekleme**: 
 
   npm i axios@latest 
 
  
 
-  
-
 3. **Uygulamayı Başlatma**: 
 
    Proje dizinindeyken, aşağıdaki komutu kullanarak uygulamayı başlatın: 
-
-   
 
    npm run dev 
 
    
 
-
-  
-
 ### PostgreSQL Verilerine Erişim 
 
   
-
 1. **psycopg2 Kütüphanesinin Kurulması**: 
 
    PostgreSQL veritabanına erişmek için  psycopg2 kütüphanesini kurmanız gerekmektedir. Kurulum için: 
 
- 
+  pip install psycopg2 
 
-   pip install psycopg2 
-
-
-
-  
 
 2. **PostgreSQL Veritabanına Bağlanma**: 
 
-   PostgreSQL veritabanına bağlanmak için aşağıdaki komutu kullanın: 
-
-
+ PostgreSQL veritabanına bağlanmak için aşağıdaki komutu kullanın: 
 
    pgcli -h localhost -U postgres -d raporyonetimi 
 
 
-
-   Burada, `localhost` PostgreSQL sunucu adresini, `postgres` PostgreSQL veritabanı kullanıcı adını ve `raporyonetimi` PostgreSQL veritabanı adını temsil eder. 
+ Burada, `localhost` PostgreSQL sunucu adresini, `postgres` PostgreSQL veritabanı kullanıcı adını ve `raporyonetimi` PostgreSQL veritabanı adını temsil eder. 
 
   
-
 3. **Verilere Erişme**: 
 
    Bağlandıktan sonra, SQL sorgularını kullanarak PostgreSQL veritabanındaki verilere erişebilirsiniz. Örneğin: 
 
+SELECT * FROM raporlar; 
+SELECT * FROM laborantlar; 
 
-
-   SELECT * FROM raporlar; 
-
-   SELECT * FROM laborantlar; 
-
-
-
-   Bu sorgular, `raporlar` ve `laborantlar` tablolarındaki tüm verileri getirecektir. 
+ Bu sorgular, `raporlar` ve `laborantlar` tablolarındaki tüm verileri getirecektir. 
 
  
 
