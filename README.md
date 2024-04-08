@@ -8,7 +8,7 @@ Bu belgede, Spring Boot , PostgreSQL ve Visual Studio Code kullanılarak gelişt
 
 Proje1, frontend kodlarını içerir ve `src/components` dizininde bulunur. 
 
-Labo2 ise backend kodlarını içerir ve `src/main/java/proje/labo` dizininde yer alır.Jar dosyası ise  target dosyasında yer alır
+Labo2 ise backend kodlarını içerir ve `src/main/java/proje/labo` dizininde yer alır.Jar dosyası ise  target dosyasında yer alır.
 
 
   
@@ -242,7 +242,6 @@ INSERT INTO Laborantlar (ad, soyad, hastane_kimlik_numarasi) VALUES
 
    
 
-   Bu komut, genellikle React uygulamalarında geliştirme sunucusunu başlatır. Ancak, proje yapılandırmasına bağlı olarak değişebilir. 
 
   
 
