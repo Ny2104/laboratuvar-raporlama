@@ -4,7 +4,7 @@
 
   
 
-Bu belgede, Spring Boot , PostgreSQL ve Visual Studio Code kullanılarak geliştirilmiş bir projenin nasıl kurulacağı, çalıştırılacağı ve veritabanı üzerindeki verilere nasıl erişileceği adımları anlatılacaktır. 
+Bu belgede, Spring ToolSuite 4 , PostgreSQL ve Visual Studio Code kullanılarak geliştirilmiş bir projenin nasıl kurulacağı, çalıştırılacağı ve veritabanı üzerindeki verilere nasıl erişileceği adımları anlatılacaktır. 
 
 Proje1, frontend kodlarını içerir ve `src/components` dizininde bulunur. 
 
@@ -30,7 +30,8 @@ Labo2 ise backend kodlarını içerir ve `src/main/java/proje/labo` dizininde ye
    - PostgreSQL'e bağlanıldı ve istenen veritabanını oluşturuldu. (raporyonetimi)
 
    - Senaryoya göre, "raporlar" ve "laborantlar" tablolarını oluşturuldu ve veriler girildi. 
-   -Proje kapsamında kullanılan veritabanı yapısını ve başlangıç verilerini aşağıda bulabilirsiniz.
+   -Proje kapsamında kullanılan veritabanı yapısını 
+   aşağıda bulabilirsiniz.
 
 
 
