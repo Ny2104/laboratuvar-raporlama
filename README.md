@@ -27,7 +27,7 @@ Labo2 ise backend kodlarını içerir ve `src/main/java/proje/labo` dizininde ye
 
 2. **Veritabanı Oluşturma**:  
 
-   - PostgreSQL'e bağlanıldı ve istenen veritabanını oluşturuldu. 
+   - PostgreSQL'e bağlanıldı ve istenen veritabanını oluşturuldu. (raporyonetimi)
 
    - Senaryoya göre, "raporlar" ve "laborantlar" tablolarını oluşturuldu ve veriler girildi. 
    -Proje kapsamında kullanılan veritabanı yapısını ve başlangıç verilerini aşağıda bulabilirsiniz.
