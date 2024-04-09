@@ -1,6 +1,6 @@
  
 
-#  Uygulamanın Kurulum ve Çalıştırılması Kılavuzu 
+#  Uygulamanın Kurulum ve Çalıştırılması 
 
   
 
